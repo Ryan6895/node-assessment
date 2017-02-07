@@ -38,7 +38,7 @@ Create the following endpoints in `server.js` using express.
    `POST: /api/users`
 
 6. Create a new admin user. You will receive their privilege as a url parameter. ('admin, moderator, or user').  Return a valid status code and the new user object you created.  Make sure to set the privilege correctly.
-   `POST: /api/users/admin`
+   `POST: /api/users/:admin`
 
 7.  Change a user's language. The language will be sent in the body `{language: "New language"}`. Update the user in your array and then return a valid status code and the updated user object.
    `POST: /api/users/language` + userId
